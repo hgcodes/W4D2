@@ -6,7 +6,7 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex.schema.table("users", (table) => {
+  return knex.schema.table('milestones', (table) => {
     table.dropColumns('famous_person_id');
   });
 };
